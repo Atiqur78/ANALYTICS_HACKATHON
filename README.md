@@ -17,16 +17,16 @@ Data Preprocessing:
 Models Evaluated
 The following models were evaluated during the process:
             
-Model Name   	f1_score
-Random Forest	0.985974
-CatBoosting Classifier	0.984806
-XGBClassifier	0.984230
-Gradient Boosting   	0.982924
-AdaBoost Classifier   	0.982772
-Decision Tree  	0.979064
+**Model Name   	f1_score**
+1. Random Forest	0.985974
+2. CatBoosting Classifier	0.984806
+3. XGBClassifier	0.984230
+4. Gradient Boosting   	0.982924
+5. AdaBoost Classifier   	0.982772
+6. Decision Tree  	0.979064
 
 
-Model Performance Report
+**Model Performance Report**
 The models were evaluated based on multiple performance metrics to assess their classification abilities. The metrics evaluated include:
 1. Accuracy: The proportion of correctly classified instances (both true positives and true negatives) out of the total instances.
 2. Precision: The proportion of true positive instances out of the instances predicted as positive.
@@ -35,15 +35,17 @@ The models were evaluated based on multiple performance metrics to assess their 
 5. AUC-ROC: Measures the model’s ability to distinguish between classes.
 6. Log Loss: Measures the performance of a classification model where the predicted output is a probability value.
 7. Confusion Matrix: Provides a breakdown of true positives (TP), true negatives (TN), false positives (FP), and false negatives (FN).
-Final Model Selection
+
+**Final Model Selection**
+
 Based on the evaluation of the above metrics, the Random Forest model was selected for final predictions. It performed well across various metrics, balancing both recall and precision, and had a good AUC-ROC score and low log loss.
 Results
 The final Random Forest model was evaluated on the test dataset, and the following results were obtained:
-Accuracy: 0.9735663630250045
-Precision: 0.7897037713689156
-Recall: 0.9808736526460815
-F1 Score: 0.8749683715886499
-AUC-ROC Score: 0.9768396208588458
-Log Loss: 0.0727324898661461
+1. Accuracy: 0.9735663630250045
+2. Precision: 0.7897037713689156
+3. Recall: 0.9808736526460815
+4. F1 Score: 0.8749683715886499
+5. AUC-ROC Score: 0.9768396208588458
+6. Log Loss: 0.0727324898661461
  
 
