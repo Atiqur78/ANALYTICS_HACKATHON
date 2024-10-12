@@ -1,0 +1,5 @@
+/venv
+/build
+/dist
+/gst.egg-info
+/notebooks

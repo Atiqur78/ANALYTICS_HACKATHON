@@ -1,0 +1,47 @@
+[ 2024-09-20 17:57:19,893 root - INFO - Data Ingestion method start]
+[ 2024-09-20 17:57:22,707 root - INFO - Dataset read as pandas Dataframe]
+[ 2024-09-20 17:57:32,116 root - INFO - Raw data is created]
+[ 2024-09-20 17:57:42,095 root - INFO - First Five row of train dataset: 
+                                       ID  Column0  Column1  Column2   Column3  ...  Column18  Column19  Column20  Column21  target
+243702  f580edd4f4a0786298fc2d16d33b93fd      2.0      600     13.0  0.678139  ...       0.0         0         0         0       0
+539408  8e7e124180b067fe9d2f38def06e135b      0.0     1881   4434.0  0.678139  ...       0.0         0         0         0       0
+621415  aea099789e24d848b47010562219e595      0.0      576   3172.0       NaN  ...       1.0         0         0         0       1
+22679   b7099368c107b9a3d0268fad9bb910f8      1.0     2495   6337.0  0.678139  ...       0.0         0         0         0       0
+484264  d557957353da5260ac747f5be9894d5d      0.0     1227     49.0 -2.028572  ...       0.0         0         0         0       0
+
+[5 rows x 24 columns]]
+[ 2024-09-20 17:57:42,110 root - INFO - First Five row of test dataset: 
+                                       ID  Column0  Column1  Column2   Column3  ...  Column18  Column19  Column20  Column21  target
+376945  f8524a5e513af29073d39e786d11d504      2.0       25     84.0 -2.028572  ...       0.0         0         0         0       0
+400967  6928f18bdfeabfddef8d5940424f0117      0.0     2495   6316.0  0.678139  ...       0.0         0         0         0       0
+120314  8a2eef5dc1029cc12b34578e844531d6      0.0     2045   1328.0  0.678139  ...       0.0         0         0         0       0
+45613   a80889a450b5e2468843db9b024f067d      0.0        0   1223.0       NaN  ...       2.0         0         0         0       1
+433361  c48ae7999bd3f0c3dc2b5efc912ce403      0.0      881   5567.0 -2.028572  ...       0.0         0         0         0       0
+
+[5 rows x 24 columns]]
+[ 2024-09-20 17:57:42,111 root - INFO - Ingestion of Data is completed]
+[ 2024-09-20 17:57:44,792 root - INFO - Read train and test data completed]
+[ 2024-09-20 17:57:44,797 root - INFO - Train Dataframe Head : 
+                                 ID  Column0  Column1  Column2   Column3   Column4   Column5   Column6   Column7   Column8  Column9  Column10  Column11  Column12  Column13  Column14  Column15  Column16  Column17  Column18  Column19  Column20  Column21  target
+0  f580edd4f4a0786298fc2d16d33b93fd      2.0      600     13.0  0.678139  0.701403 -0.007469 -0.407939 -0.015607 -0.774979      NaN         1         1         1         1       NaN   0.00339       0.0         0       0.0         0         0         0       0
+1  8e7e124180b067fe9d2f38def06e135b      0.0     1881   4434.0  0.678139  0.701403 -0.007468  3.377878 -0.015604  1.021202      NaN         0         0         0         0  0.001351   0.00339       0.0         0       0.0         0         0         0       0
+2  aea099789e24d848b47010562219e595      0.0      576   3172.0       NaN       NaN       NaN -0.407939 -0.015607 -0.774979      NaN         0         0         0         0       NaN   0.00339       0.0         0       1.0         0         0         0       1
+3  b7099368c107b9a3d0268fad9bb910f8      1.0     2495   6337.0  0.678139  0.701403 -0.007469 -0.407939 -0.015607 -0.774979      NaN         1         1         1         1  0.001351   0.00339       0.0         0       0.0         0         0         0       0
+4  d557957353da5260ac747f5be9894d5d      0.0     1227     49.0 -2.028572 -1.855728 -0.007468  1.638775 -0.015605  1.254401      NaN         0         0         0         0  0.001351   0.00339       0.0         0       0.0         0         0         0       0]
+[ 2024-09-20 17:57:44,802 root - INFO - Test Dataframe Head  : 
+                                 ID  Column0  Column1  Column2   Column3   Column4   Column5   Column6   Column7   Column8  Column9  Column10  Column11  Column12  Column13  Column14  Column15  Column16  Column17  Column18  Column19  Column20  Column21  target
+0  f8524a5e513af29073d39e786d11d504      2.0       25     84.0 -2.028572 -1.855728       NaN -0.407939 -0.015607 -0.774979      NaN         0         0         0         0       NaN   0.00339       0.0         0       0.0         0         0         0       0
+1  6928f18bdfeabfddef8d5940424f0117      0.0     2495   6316.0  0.678139  0.701403 -0.007469 -0.407939 -0.015607  0.125758      NaN         0         1         0         0  0.001351   0.00339       0.0         0       0.0         0         0         0       0
+2  8a2eef5dc1029cc12b34578e844531d6      0.0     2045   1328.0  0.678139  0.701403 -0.007467 -0.407939 -0.015607  1.037665      NaN         1         1         1         1  0.001351   0.00339       0.0         0       0.0         0         0         0       0
+3  a80889a450b5e2468843db9b024f067d      0.0        0   1223.0       NaN       NaN -0.007468 -0.407939 -0.015607 -0.774979      NaN         0         0         0         0       NaN   0.00339       0.0         1       2.0         0         0         0       1
+4  c48ae7999bd3f0c3dc2b5efc912ce403      0.0      881   5567.0 -2.028572 -1.855728 -0.007469 -0.407939 -0.015607 -0.774979      NaN         0         0         0         0       NaN   0.00339       0.0         0       0.0         0         0         0       0]
+[ 2024-09-20 17:57:44,802 root - INFO - Obtaining preprocessing object]
+[ 2024-09-20 17:57:44,802 root - INFO - Data Transformation initiated]
+[ 2024-09-20 17:57:44,802 root - INFO - Pipeline Initiated]
+[ 2024-09-20 17:57:44,802 root - INFO - Pipeline Completed]
+[ 2024-09-20 17:57:45,545 root - INFO - Applying preprocessing object on training and testing datasets.]
+[ 2024-09-20 17:58:33,297 root - INFO - Preprocessing is completed]
+[ 2024-09-20 17:58:33,299 root - INFO - Preprocessor pickle file saved]
+[ 2024-09-20 17:58:33,363 root - INFO - Splitting Dependent and Independent variables from train and test data]
+[ 2024-09-20 18:11:13,286 root - INFO - Model Report : {'XGBClassifier': {'accuracy': 0.9705442812261187, 'f1_score': 0.8636184934738167, 'precision': 0.7638570137005355, 'recall': 0.9933526272949262, 'log_loss': 0.08083825731600044}, 'RandomForestClassifier': {'accuracy': 0.9717372845376582, 'f1_score': 0.8678511166253102, 'precision': 0.7734687378365946, 'recall': 0.9884688432667089, 'log_loss': 0.07807883595662946}, 'AdaBoostClassifier': {'accuracy': 0.9680606266451558, 'f1_score': 0.8544789833065749, 'precision': 0.7466112294223034, 'recall': 0.9987790539929456, 'log_loss': 0.38772197118162083}, 'GradientBoostingClassifier': {'accuracy': 0.9687696357306614, 'f1_score': 0.8572038669099662, 'precision': 0.7509863945578231, 'recall': 0.9984172922130777, 'log_loss': 0.08937101243789983}, 'CatBoostClassifier': {'accuracy': 0.9709688375647448, 'f1_score': 0.8650217133833399, 'precision': 0.7675681356407202, 'recall': 0.9908202948358505, 'log_loss': 0.0805725223966508}}]
+[ 2024-09-20 18:11:13,287 root - INFO - Best Model Found , Model Name : RandomForestClassifier , Accuracy Score : 0.9717372845376582]
