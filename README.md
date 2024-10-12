@@ -1,7 +1,7 @@
 # GST Analytics Hackathon
 ==========================
 
-`Note: I have uploaded the project as a ZIP file, the checksum has been generated of that file `
+**`Note: I have uploaded the project as a ZIP file, the checksum has been generated of that file `**
 
 Model Evaluation and Its Impact
 Introduction
